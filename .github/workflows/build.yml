@@ -1,0 +1,22 @@
+name: "Build nix flake packages"
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, ubuntu-24.04-arm, macos-13, macos-latest]
+        package: [oso_cloud, oso_dev_server]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: Build ${{ matrix.package }}
+        run: nix build .#${{ matrix.package }}

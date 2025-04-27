@@ -7,15 +7,15 @@
   outputs = {flake-parts, ...} @ inputs: let
     oso_cloud_cli_platform_mappings = {
       "aarch64-darwin" = {
-        hash = "";
+        hash = "sha256-ybHZg3tj0dy0St7RtII9ogdv+81nwbzAO4RgQt5oLbE=";
         platform = "mac_osx_arm64";
       };
       "aarch64-linux" = {
-        hash = "";
+        hash = "sha256-dQHKL2yazbUeOuRFAc2+K3fXtauRYiJG9bQZhN8o0So=";
         platform = "linux_arm64";
       };
       "x86_64-darwin" = {
-        hash = "";
+        hash = "sha256-Eo6mkUW1WzHRfFPxrDMwBuCbvenboxNs67mEr6dJwhM=";
         platform = "mac_osx_x86_64";
       };
       "x86_64-linux" = {
@@ -26,15 +26,15 @@
     oso_cloud_cli_version = "0.28.2";
     oso_dev_server_platform_mappings = {
       "aarch64-darwin" = {
-        hash = "";
+        hash = "sha256-kpPc5X2n9ivNxUjxuM2+itdh+HR3b0YMbZ2dCAm5DM0=";
         platform = "macos-arm64";
       };
       "aarch64-linux" = {
-        hash = "";
+        hash = "sha256-FJvfCefSMXnsyjQzdb38Xydem6NOh03Wr+W23jpnJhk=";
         platform = "linux-arm64";
       };
       "x86_64-darwin" = {
-        hash = "";
+        hash = "sha256-BvWCAEeTKw0Qn3PAG2Ub+HOub+VwOZUDz7RBh6OvEJQ=";
         platform = "macos-x86_64";
       };
       "x86_64-linux" = {

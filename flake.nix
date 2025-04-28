@@ -30,7 +30,7 @@
         platform = "macos-arm64";
       };
       "aarch64-linux" = {
-        hash = "";
+        hash = "sha256-FJvfCefSMXnsyjQzdb38Xydem6NOh03Wr+W23jpnJhk=";
         platform = "linux-arm64";
       };
       "x86_64-darwin" = {
